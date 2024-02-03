@@ -1,0 +1,202 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Mulish", sans-serif;
+}
+/*--------Header Start-------------*/
+/*--------Nav Container ----------*/
+nav {
+  margin: 3.125rem auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1170px;
+}
+.logo-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 1rem;
+}
+
+.logo-container .sp1 {
+  color: #131318;
+  font-size: 2.25rem;
+  font-weight: 800;
+}
+.logo-container .sp2 {
+  color: #ff5400;
+  font-size: 2.25rem;
+  font-weight: 800;
+}
+.menu ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  gap: 2.7rem;
+  text-align: center;
+  font-size: 1.125rem;
+  font-style: normal;
+  font-weight: 400;
+}
+.menu i {
+  display: none;
+}
+.menu li {
+  cursor: pointer;
+}
+#home-menu {
+  color: #ff5400;
+}
+/*------Banner------*/
+.banner {
+  background: linear-gradient(
+      180deg,
+      rgba(19, 19, 24, 0.8) 0%,
+      rgba(19, 19, 24, 0) 100%
+    ),
+    url(../Images/banner.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 31.25rem;
+  margin: 0 auto;
+  border-radius: 1rem;
+  max-width: 1170px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+}
+.banner-title {
+  padding: 6.625rem 17.9375rem 0;
+  text-align: center;
+  color: #fff;
+  font-size: 4rem;
+  font-weight: 800;
+}
+.banner-subtitle {
+  color: #fff;
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 400;
+  padding: 1.5rem 15.4rem 2rem;
+}
+.trip-finder {
+  display: flex;
+  justify-content: center;
+  margin: 0 11.5rem 6.625rem;
+flex-direction: row;
+  padding: 1rem;
+
+  gap: 1.5rem;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.3);
+}
+.trip-finder .box {
+  width: 10.875rem;
+  height: 3.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  border-radius: 8px;
+  background: #fff;
+  cursor: pointer;
+}
+.trip-finder .box p {
+  padding: 1rem 0 1rem 1rem;
+  color: rgba(19, 19, 24, 0.5);
+  text-align: left;
+  font-size: 1rem;
+  font-weight: 400;
+}
+.trip-finder .box img{
+    max-width: 1.5rem;
+    max-height: 1.5rem;
+    padding-right: 1rem;
+}
+.primary-btn {
+  width: 10.875rem;
+  height: 3.25rem;
+  border-radius: 8px;
+  background: #ff5400;
+  padding: 1rem 2rem;
+  border: 0;
+  color: #fff;
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+/*-------Responsive----*/
+/*-----Mobile device-----*/
+@media (max-width: 576px) {
+  nav {
+    margin: 1.25rem;
+  }
+
+  .menu ul {
+    display: none;
+  }
+  .menu i {
+    display: block;
+    padding-top: 1rem;
+    width: 1.5rem;
+    height: 1.5rem;
+    cursor: pointer;
+  }
+  .logo-container {
+    gap: 0.5rem;
+  }
+  .banner{
+    margin: 1rem;
+}
+.banner-title{
+    padding: 2rem 4rem;
+    padding-bottom: 0.5rem;
+    font-size: 1.5rem;
+}
+.banner-subtitle{
+    padding: 0 1rem;
+}
+.trip-finder{
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin:  2rem 1.5rem;
+}
+}
+
+/*-----Tablet device-----*/
+@media (min-width: 576px) and (max-width: 992px) {
+  nav {
+    margin: 2.25rem;
+  }
+
+  .menu ul {
+    display: none;
+  }
+  .menu i {
+    display: block;
+    padding-top: 1rem;
+    cursor: pointer;
+  }
+  .banner{
+    margin: 1rem;
+}
+.banner-title{
+    padding: 2rem 4rem;
+    padding-bottom: 0.5rem;
+    font-size: 1.5rem;
+}
+.banner-subtitle{
+    padding: 0 1rem;
+}
+.trip-finder{
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin:  2rem 1.5rem;
+}
+}
