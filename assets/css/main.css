@@ -158,15 +158,29 @@ nav {
   font-weight: 400;
   line-height: 1.575rem;
 }
-.blogs p{
+.blogs p {
   margin-bottom: 1.5rem;
 }
-.blog-container{
-  max-width: 577px; 
+.blog-container {
+  max-width: 577px;
 }
-.blogs ul{
-margin-left: 2rem;
+.blogs ul {
+  margin-left: 2rem;
 }
+/*-------Destination Section----*/
+.destination-section {
+  max-width: 1170px;
+  margin: 0 auto;
+}
+.destination-img {
+  gap: 1.5rem;
+
+  display: grid;
+
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+}
+
 /*-------Responsive----*/
 /*-----Mobile device-----*/
 @media (max-width: 576px) {
@@ -204,24 +218,22 @@ margin-left: 2rem;
     flex-direction: column;
     margin: 2rem 1.5rem;
   }
-  .blogs{
+  .blogs {
     text-align: left;
     flex-direction: column;
     margin: 3rem 2rem;
-   
   }
-  .blog-img img{
-   width: 98%;
+  .blog-img img {
+    width: 98%;
   }
-  .section-title{
+  .section-title {
     text-align: left;
     font-size: 1.25rem;
   }
-  .section-details{
+  .section-details {
     font-size: 0.875rem;
     line-height: 1.25rem;
   }
-
 }
 
 /*-----Tablet device-----*/
@@ -262,20 +274,19 @@ margin-left: 2rem;
     width: 7rem;
     padding: 0.5rem 0.5rem;
   }
-  .blogs{
+  .blogs {
     text-align: left;
-  flex-direction: column;
+    flex-direction: column;
     margin: 3rem 2rem;
-   
   }
-  .blog-img img{
-   width: 100%;
+  .blog-img img {
+    width: 100%;
   }
-  .section-title{
+  .section-title {
     text-align: left;
     font-size: 1.5rem;
   }
-  .section-details{
+  .section-details {
     font-size: 0.9rem;
     line-height: 1.25rem;
   }
