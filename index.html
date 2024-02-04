@@ -79,24 +79,28 @@
       <nav>
         <!---Logo Container-->
         <div class="logo-container">
-          <img src="./assets/Images/Group 40071 (2).png" alt="" />
-          <h3>
-            <span class="sp1">Voyage</span> <span class="sp2">Vibes</span>
-          </h3>
+          <a href="#"
+            ><img src="./assets/Images/Group 40071 (2).png" alt="" /> </a
+          ><a href="#"
+            ><h3>
+              <span class="sp1">Voyage</span> <span class="sp2">Vibes</span>
+            </h3></a
+          >
         </div>
         <!--Menu-->
         <div class="menu">
           <ul>
-            <li id="home-menu">Home</li>
-            <li>Packages</li>
-            <li>Blog</li>
-            <li>Contact</li>
+            <a href="#banner"><li id="home-menu">Home</li></a>
+            <a href="#packages"><li>Packages</li></a>
+            <a href="#testimonial"><li>Testimonial</li></a>
+            <a href="#blog"><li>Blog</li></a>
+            <a href="#contact"><li>Contact</li></a>
           </ul>
           <i class="fa-solid fa-bars" style="color: #131318"></i>
         </div>
       </nav>
       <!--Banner Section-->
-      <div class="banner">
+      <div class="banner" id="banner">
         <div class="banner-content">
           <h3 class="banner-title">Explore Your Travel</h3>
           <p class="banner-subtitle">
@@ -116,7 +120,7 @@
             <p>Select type</p>
             <img src="./assets/Images/drp.png" alt="" />
           </div>
-          <button class="primary-btn">
+          <button class="primary-btn" style="cursor: progress">
             <i class="fa-solid fa-magnifying-glass" style="color: #ffffff"></i>
             Find Now
           </button>
@@ -124,7 +128,8 @@
       </div>
     </header>
     <main>
-      <div class="blogs">
+      <!-- Blog Section -->
+      <section class="blogs" id="blog">
         <div class="blog-container">
           <h4 class="section-title">Our Popular Tours</h4>
           <div class="blog-details">
@@ -170,9 +175,9 @@
         <div class="blog-img">
           <img src="./assets/Images/blog.png" alt="Himalayas" />
         </div>
-      </div>
+      </section>
       <!------destination-section---->
-      <div class="destination-section">
+      <section class="destination-section">
         <div class="destination-details">
           <h4 class="section-title">Choose Your Destination</h4>
           <p class="section-details">
@@ -212,7 +217,59 @@
             </div>
           </div>
         </div>
-      </div>
+      </section>
+      <!-- Features Section -->
+      <section class="features">
+        <div class="feature-header">
+          <h4 class="section-title">Why Choose Us</h4>
+          <p class="section-details" style="text-align: center">
+            Embark on unforgettable journeys with Voyage Vibes – where luxury
+            hotels, unparalleled service, and unbeatable prices converge for
+            you.
+          </p>
+        </div>
+        <div class="card-container">
+          <div class="top-card-row">
+            <div class="feature-cards" id="hotels">
+              <img src="./assets/Images/hotel.png" alt="hotels" />
+              <h5 class="section-subtitle">Handpicked Hotels</h5>
+              <p class="section-details">
+                Indulge in a world of opulence with our curated selection of
+                hotels. From chic boutiques to lavish resorts, each stay
+                promises luxury, comfort, and unmatched elegance. Elevate your
+                travel experience as we handpick accommodations tailored to
+                exceed your expectations and create lasting memories.
+              </p>
+            </div>
+            <div class="feature-cards" id="services">
+              <img src="./assets/Images/map.png" alt="World Class Service" />
+              <h5 class="section-subtitle">World Class Service</h5>
+              <p class="section-details">
+                Experience impeccable service beyond compare. Our dedicated team
+                ensures every aspect of your journey is seamless. From
+                personalized recommendations to 24/7 support, indulge in
+                world-class hospitality that anticipates your needs. Elevate
+                your travel with a commitment to excellence that transforms
+                every moment into a cherished memory.
+              </p>
+            </div>
+          </div>
+          <div class="feature-cards" id="best-price">
+            <img
+              src="./assets/Images/price-tag.png"
+              alt="Best Price Guaranteed"
+            />
+            <h5 class="section-subtitle">Best Price Guaranteed</h5>
+            <p class="section-details">
+              Unlock unbeatable value with our Best Price Guaranteed promise. We
+              strive to offer you the most competitive rates, ensuring your
+              travel dreams fit seamlessly into your budget. Book with
+              confidence, knowing you'll receive the utmost value for your
+              investment, making every adventure both memorable and affordable
+            </p>
+          </div>
+        </div>
+      </section>
     </main>
   </body>
 </html>

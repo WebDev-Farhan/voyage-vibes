@@ -3,7 +3,9 @@
   padding: 0;
   font-family: "Mulish", sans-serif;
 }
-body{ margin: 0 2rem;}
+body {
+  margin: 0 2rem;
+}
 /*--------Header Start-------------*/
 /*--------Nav Container ----------*/
 nav {
@@ -18,6 +20,9 @@ nav {
   align-items: center;
   justify-content: space-around;
   gap: 1rem;
+}
+.logo-container > a {
+  text-decoration: none;
 }
 
 .logo-container .sp1 {
@@ -45,6 +50,12 @@ nav {
 }
 .menu li {
   cursor: pointer;
+}
+ul > a {
+  text-decoration: none;
+}
+ul > a :hover {
+  text-decoration: none;
 }
 #home-menu {
   color: #ff5400;
@@ -142,7 +153,7 @@ nav {
   width: 100%;
   max-height: 550px;
   border-radius: 1rem;
-  overlay: lightgray 50%;
+  background-color: lightgray;
 }
 .section-title {
   color: #131318;
@@ -151,6 +162,16 @@ nav {
   font-size: 2.5rem;
   font-weight: 800;
   margin-bottom: 1.5rem;
+}
+.blog-container > .section-title {
+  text-align: left;
+}
+.section-subtitle {
+  color: #131318;
+  text-align: left;
+  font-family: Mulish;
+  font-size: 1.5rem;
+  font-weight: 800;
 }
 .section-details {
   color: rgba(19, 19, 24, 0.7);
@@ -273,14 +294,14 @@ nav {
     ),
     url(../Images/kashmir.png) no-repeat;
 }
-.kashmir-2{
+.kashmir-2 {
   display: none;
 }
 .bangladesh {
   display: flex;
   align-items: center;
   justify-content: center;
-  width:29.5625rem;
+  width: 29.5625rem;
   height: 18.75rem;
   border-radius: 1rem;
   background: linear-gradient(
@@ -310,6 +331,49 @@ nav {
   font-family: Mulish;
   font-size: 1.75rem;
   font-weight: 800;
+}
+/* Features Section */
+.features {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 1170px;
+  margin: 0 auto 6.25rem;
+}
+.feature-header {
+  max-width: 643px;
+  margin-bottom: 3rem;
+}
+.feature-cards {
+  max-width: 35.8125rem;
+
+  border-radius: 1rem;
+  padding: 2rem;
+  flex-wrap: wrap;
+}
+.card-container {
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+  display: flex;
+  flex-direction: column;
+}
+.top-card-row {
+  display: flex;
+  gap: 1.5rem;
+}
+#hotels {
+  border: 1px solid rgba(251, 181, 99, 0.2);
+  background: rgba(251, 181, 99, 0.05);
+}
+#services {
+  border: 1px solid rgba(41, 206, 246, 0.2);
+  background: rgba(41, 206, 246, 0.05);
+}
+#best-price {
+  border: 1px solid rgba(233, 68, 68, 0.2);
+  background: rgba(233, 68, 68, 0.05);
 }
 
 /*-------Responsive----*/
@@ -347,17 +411,17 @@ nav {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    margin: 2rem 1.5rem;
+    margin: 2rem auto;
   }
   .blogs {
     text-align: left;
     flex-direction: column;
-    margin: 3rem 2rem;
+    margin: 3rem auto;
   }
   .blog-img img {
     width: 98%;
   }
-  .section-title {
+  .blog-container > .section-title {
     text-align: left;
     font-size: 1.25rem;
   }
@@ -365,18 +429,26 @@ nav {
     font-size: 0.875rem;
     line-height: 1.25rem;
   }
-  .destination-details>.section-title{
+  .section-title {
     text-align: center;
+    font-size: 1.25rem;
   }
-  .first-row, .second-row, .third-row{
+  .first-row,
+  .second-row,
+  .third-row {
     flex-direction: column;
   }
-  .maldives, .srilanka, .bandarban, .indonesia, .bangladesh, .north-america{
+  .maldives,
+  .srilanka,
+  .bandarban,
+  .indonesia,
+  .bangladesh,
+  .north-america {
     width: 100%;
     max-width: 20.9375rem;
     height: 11rem;
   }
-  .kashmir{
+  .kashmir {
     display: none;
   }
   .kashmir-2 {
@@ -394,16 +466,24 @@ nav {
       ),
       url(../Images/kashmir-2.png) no-repeat;
   }
-  .destination-section{
-    margin: 0 1.25rem 1.5rem;
+  .destination-section {
+    margin: 0 0.25rem 1.5rem;
   }
-  
+  .top-card-row {
+    flex-direction: column;
+  }
+  .feature-header {
+    margin-top: 1rem;
+  }
+  .feature-cards {
+    width: 20.9375rem;
+  }
 }
 
 /*-----Tablet device-----*/
 @media (min-width: 576px) and (max-width: 992px) {
   nav {
-    margin: 2.25rem;
+    margin: 2.25rem auto;
   }
 
   .menu ul {
@@ -415,20 +495,20 @@ nav {
     cursor: pointer;
   }
   .banner {
-    margin: 1rem;
+    margin: 1rem auto;
   }
   .banner-title {
     padding: 2rem 4rem;
     padding-bottom: 0.5rem;
-    font-size: 1.5rem;
+    font-size: 2.5rem;
   }
   .banner-subtitle {
-    padding: 0 1rem;
+    padding: 0 9rem;
   }
   .trip-finder {
     align-items: center;
     justify-content: center;
-    margin: 2rem 1.5rem;
+    margin: 2rem auto;
   }
   .trip-finder .box {
     width: 7rem;
@@ -441,12 +521,12 @@ nav {
   .blogs {
     text-align: left;
     flex-direction: column;
-    margin: 3rem 2rem;
+    margin: 3rem auto;
   }
   .blog-img img {
     width: 100%;
   }
-  .section-title {
+  .blog-container > .section-title {
     text-align: left;
     font-size: 1.5rem;
   }
@@ -454,11 +534,20 @@ nav {
     font-size: 0.9rem;
     line-height: 1.25rem;
   }
-  .destination-section{
-    margin: 0 2.25rem 2.5rem;
+  .destination-section {
+    margin: 0 2.25rem auto;
   }
-  .destination-details>.section-title{
+  .section-title {
     text-align: center;
+    font-size: 1.5rem;
   }
-  
+  .top-card-row {
+    flex-direction: column;
+  }
+  .feature-header {
+    margin-top: 1rem;
+  }
+  .feature-cards {
+    width: 30.9375rem;
+  }
 }
