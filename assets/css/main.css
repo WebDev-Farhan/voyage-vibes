@@ -3,6 +3,7 @@
   padding: 0;
   font-family: "Mulish", sans-serif;
 }
+body{ margin: 0 2rem;}
 /*--------Header Start-------------*/
 /*--------Nav Container ----------*/
 nav {
@@ -170,15 +171,145 @@ nav {
 /*-------Destination Section----*/
 .destination-section {
   max-width: 1170px;
-  margin: 0 auto;
+  margin: 0 auto 6.35rem;
+  text-align: center;
 }
+.destination-details {
+  padding-bottom: 3rem;
+}
+
 .destination-img {
+  display: flex;
+  flex-direction: column;
   gap: 1.5rem;
+}
+.first-row {
+  display: flex;
+  gap: 1.5rem;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
 
-  display: grid;
-
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(3, 1fr);
+.second-row {
+  display: flex;
+  gap: 1.5rem;
+  justify-content: center;
+  align-items: center;
+}
+.third-row {
+  display: flex;
+  gap: 1.5rem;
+  justify-content: center;
+  align-items: center;
+}
+.maldives {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 35.8125rem;
+  height: 18.75rem;
+  border-radius: 1rem;
+  background: linear-gradient(
+      0deg,
+      rgba(19, 19, 24, 0.2) 0%,
+      rgba(19, 19, 24, 0.2) 100%
+    ),
+    url(../Images/maldives.png) no-repeat;
+}
+.indonesia {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 35.8125rem;
+  height: 18.75rem;
+  border-radius: 1rem;
+  background: linear-gradient(
+      0deg,
+      rgba(19, 19, 24, 0.2) 0%,
+      rgba(19, 19, 24, 0.2) 100%
+    ),
+    url(../Images/indonesia.png), no-repeat;
+}
+.srilanka {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 23.375rem;
+  height: 17.875rem;
+  border-radius: 1rem;
+  background: linear-gradient(
+      0deg,
+      rgba(19, 19, 24, 0.2) 0%,
+      rgba(19, 19, 24, 0.2) 100%
+    ),
+    url(../Images/srilanka.png), no-repeat;
+}
+.north-america {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 29.625rem;
+  height: 17.875rem;
+  border-radius: 1rem;
+  background: linear-gradient(
+      0deg,
+      rgba(19, 19, 24, 0.2) 0%,
+      rgba(19, 19, 24, 0.2) 100%
+    ),
+    url(../Images/north-america.png) no-repeat;
+}
+.kashmir {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 17.125rem;
+  height: 17.875rem;
+  border-radius: 1rem;
+  background: linear-gradient(
+      0deg,
+      rgba(19, 19, 24, 0.2) 0%,
+      rgba(19, 19, 24, 0.2) 100%
+    ),
+    url(../Images/kashmir.png) no-repeat;
+}
+.kashmir-2{
+  display: none;
+}
+.bangladesh {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width:29.5625rem;
+  height: 18.75rem;
+  border-radius: 1rem;
+  background: linear-gradient(
+      0deg,
+      rgba(19, 19, 24, 0.2) 0%,
+      rgba(19, 19, 24, 0.2) 100%
+    ),
+    url(../Images/bangladesh.png) no-repeat;
+}
+.bandarban {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 42.0625rem;
+  height: 18.75rem;
+  border-radius: 1rem;
+  background: linear-gradient(
+      0deg,
+      rgba(19, 19, 24, 0.2) 0%,
+      rgba(19, 19, 24, 0.2) 100%
+    ),
+    url(../Images/bandarban.png) no-repeat;
+}
+.image-overlay {
+  color: #fff;
+  text-align: center;
+  font-family: Mulish;
+  font-size: 1.75rem;
+  font-weight: 800;
 }
 
 /*-------Responsive----*/
@@ -234,6 +365,39 @@ nav {
     font-size: 0.875rem;
     line-height: 1.25rem;
   }
+  .destination-details>.section-title{
+    text-align: center;
+  }
+  .first-row, .second-row, .third-row{
+    flex-direction: column;
+  }
+  .maldives, .srilanka, .bandarban, .indonesia, .bangladesh, .north-america{
+    width: 100%;
+    max-width: 20.9375rem;
+    height: 11rem;
+  }
+  .kashmir{
+    display: none;
+  }
+  .kashmir-2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 20.9375rem;
+    height: 11rem;
+    border-radius: 1rem;
+    background: linear-gradient(
+        0deg,
+        rgba(19, 19, 24, 0.2) 0%,
+        rgba(19, 19, 24, 0.2) 100%
+      ),
+      url(../Images/kashmir-2.png) no-repeat;
+  }
+  .destination-section{
+    margin: 0 1.25rem 1.5rem;
+  }
+  
 }
 
 /*-----Tablet device-----*/
@@ -290,4 +454,11 @@ nav {
     font-size: 0.9rem;
     line-height: 1.25rem;
   }
+  .destination-section{
+    margin: 0 2.25rem 2.5rem;
+  }
+  .destination-details>.section-title{
+    text-align: center;
+  }
+  
 }
