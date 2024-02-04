@@ -29,7 +29,7 @@ nav {
   font-size: 2.25rem;
   font-weight: 800;
 }
-.menu ul {
+.menu > ul {
   list-style: none;
   display: flex;
   justify-content: space-around;
@@ -66,7 +66,6 @@ nav {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-
 }
 .banner-title {
   padding: 6.625rem 17.9375rem 0;
@@ -86,9 +85,8 @@ nav {
   display: flex;
   justify-content: center;
   margin: 0 11.5rem 6.625rem;
-flex-direction: row;
+  flex-direction: row;
   padding: 1rem;
-
   gap: 1.5rem;
   border-radius: 8px;
   background: rgba(255, 255, 255, 0.3);
@@ -111,10 +109,10 @@ flex-direction: row;
   font-size: 1rem;
   font-weight: 400;
 }
-.trip-finder .box img{
-    max-width: 1.5rem;
-    max-height: 1.5rem;
-    padding-right: 1rem;
+.trip-finder .box img {
+  max-width: 1.5rem;
+  max-height: 1.5rem;
+  padding-right: 1rem;
 }
 .primary-btn {
   width: 10.875rem;
@@ -128,6 +126,46 @@ flex-direction: row;
   font-size: 1rem;
   font-weight: 700;
   cursor: pointer;
+}
+/*------Header Ends-------------*/
+/*-------Main Starts-----------*/
+.blogs {
+  margin: 6.25rem auto;
+  display: flex;
+  gap: 2rem;
+  max-width: 1170px;
+  align-items: center;
+  justify-content: center;
+}
+.blog-img img {
+  width: 100%;
+  max-height: 550px;
+  border-radius: 1rem;
+  overlay: lightgray 50%;
+}
+.section-title {
+  color: #131318;
+  text-align: center;
+  font-family: Mulish;
+  font-size: 2.5rem;
+  font-weight: 800;
+  margin-bottom: 1.5rem;
+}
+.section-details {
+  color: rgba(19, 19, 24, 0.7);
+  font-family: Mulish;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.575rem;
+}
+.blogs p{
+  margin-bottom: 1.5rem;
+}
+.blog-container{
+  max-width: 577px; 
+}
+.blogs ul{
+margin-left: 2rem;
 }
 /*-------Responsive----*/
 /*-----Mobile device-----*/
@@ -149,23 +187,41 @@ flex-direction: row;
   .logo-container {
     gap: 0.5rem;
   }
-  .banner{
+  .banner {
     margin: 1rem;
-}
-.banner-title{
+  }
+  .banner-title {
     padding: 2rem 4rem;
     padding-bottom: 0.5rem;
     font-size: 1.5rem;
-}
-.banner-subtitle{
+  }
+  .banner-subtitle {
     padding: 0 1rem;
-}
-.trip-finder{
+  }
+  .trip-finder {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    margin:  2rem 1.5rem;
-}
+    margin: 2rem 1.5rem;
+  }
+  .blogs{
+    text-align: left;
+    flex-direction: column;
+    margin: 3rem 2rem;
+   
+  }
+  .blog-img img{
+   width: 98%;
+  }
+  .section-title{
+    text-align: left;
+    font-size: 1.25rem;
+  }
+  .section-details{
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+  }
+
 }
 
 /*-----Tablet device-----*/
@@ -182,21 +238,45 @@ flex-direction: row;
     padding-top: 1rem;
     cursor: pointer;
   }
-  .banner{
+  .banner {
     margin: 1rem;
-}
-.banner-title{
+  }
+  .banner-title {
     padding: 2rem 4rem;
     padding-bottom: 0.5rem;
     font-size: 1.5rem;
-}
-.banner-subtitle{
+  }
+  .banner-subtitle {
     padding: 0 1rem;
-}
-.trip-finder{
+  }
+  .trip-finder {
     align-items: center;
     justify-content: center;
-    flex-direction: column;
-    margin:  2rem 1.5rem;
-}
+    margin: 2rem 1.5rem;
+  }
+  .trip-finder .box {
+    width: 7rem;
+    gap: 1rem;
+  }
+  .trip-finder .primary-btn {
+    width: 7rem;
+    padding: 0.5rem 0.5rem;
+  }
+  .blogs{
+    text-align: left;
+  flex-direction: column;
+    margin: 3rem 2rem;
+   
+  }
+  .blog-img img{
+   width: 100%;
+  }
+  .section-title{
+    text-align: left;
+    font-size: 1.5rem;
+  }
+  .section-details{
+    font-size: 0.9rem;
+    line-height: 1.25rem;
+  }
 }
