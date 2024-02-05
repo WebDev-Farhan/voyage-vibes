@@ -53,9 +53,7 @@ nav {
 }
 ul > a {
   text-decoration: none;
-}
-ul > a :hover {
-  text-decoration: none;
+  color: #131318;
 }
 #home-menu {
   color: #ff5400;
@@ -341,7 +339,8 @@ ul > a :hover {
   max-width: 1170px;
   margin: 0 auto 6.25rem;
 }
-.feature-header {
+.feature-header,
+.package-header {
   max-width: 643px;
   margin-bottom: 3rem;
 }
@@ -375,110 +374,100 @@ ul > a :hover {
   border: 1px solid rgba(233, 68, 68, 0.2);
   background: rgba(233, 68, 68, 0.05);
 }
+.packages {
+  max-width: 1170px;
+  margin: 0 auto 6.25rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.package-card-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  margin-bottom: 3rem;
+}
+.packages>.primary-btn{
+  width: 13.125rem;
+  padding: 0.875rem, 1.375rem;
+  cursor: progress;
+}
+
+.package-card-1 {
+  max-width: 1170px;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  background-image: url(../Images/package1.png);
+  background-color: lightgray;
+  border-radius: 1rem;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.package-card-2 {
+  max-width: 1170px;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  background-image: url(../Images/package2.png);
+  background-color: lightgray;
+  border-radius: 1rem;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.card-box {
+  height: 24.3125rem;
+  margin: 3.5rem 3.5rem 3.5rem 33.4rem;
+  width: 36.18rem;
+  padding: 3.125rem;
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  flex-direction: column;
+  border-radius: 16px;
+  border: 2px solid #fff;
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(2.5px);
+}
+.package-card-2 > .card-box {
+  margin: 3.5rem 33.4rem 3.5rem 3.5rem;
+}
+.package-info-container {
+  display: flex;
+  gap: 1.5rem;
+  margin-bottom: 1.6rem;
+}
+.info-details {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+.info-details > p {
+  color: #5a5a5d;
+  font-size: 1rem;
+  font-weight: 400;
+}
+.package-details > .section-details {
+  margin: 1rem 0 1rem;
+}
+.price {
+  color: #ff5400;
+  font-size: 1.25;
+  font-weight: 800;
+  margin-bottom: 1.5rem;
+}
+.package-details > .primary-btn {
+  padding: 0.875rem 1.5rem;
+  width: 9.375rem;
+  font-size: 1.25rem;
+  font-weight: 800;
+  cursor: progress;
+}
 
 /*-------Responsive----*/
-/*-----Mobile device-----*/
-@media (max-width: 576px) {
-  nav {
-    margin: 1.25rem;
-  }
-
-  .menu ul {
-    display: none;
-  }
-  .menu i {
-    display: block;
-    padding-top: 1rem;
-    width: 1.5rem;
-    height: 1.5rem;
-    cursor: pointer;
-  }
-  .logo-container {
-    gap: 0.5rem;
-  }
-  .banner {
-    margin: 1rem;
-  }
-  .banner-title {
-    padding: 2rem 4rem;
-    padding-bottom: 0.5rem;
-    font-size: 1.5rem;
-  }
-  .banner-subtitle {
-    padding: 0 1rem;
-  }
-  .trip-finder {
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    margin: 2rem auto;
-  }
-  .blogs {
-    text-align: left;
-    flex-direction: column;
-    margin: 3rem auto;
-  }
-  .blog-img img {
-    width: 98%;
-  }
-  .blog-container > .section-title {
-    text-align: left;
-    font-size: 1.25rem;
-  }
-  .section-details {
-    font-size: 0.875rem;
-    line-height: 1.25rem;
-  }
-  .section-title {
-    text-align: center;
-    font-size: 1.25rem;
-  }
-  .first-row,
-  .second-row,
-  .third-row {
-    flex-direction: column;
-  }
-  .maldives,
-  .srilanka,
-  .bandarban,
-  .indonesia,
-  .bangladesh,
-  .north-america {
-    width: 100%;
-    max-width: 20.9375rem;
-    height: 11rem;
-  }
-  .kashmir {
-    display: none;
-  }
-  .kashmir-2 {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    max-width: 20.9375rem;
-    height: 11rem;
-    border-radius: 1rem;
-    background: linear-gradient(
-        0deg,
-        rgba(19, 19, 24, 0.2) 0%,
-        rgba(19, 19, 24, 0.2) 100%
-      ),
-      url(../Images/kashmir-2.png) no-repeat;
-  }
-  .destination-section {
-    margin: 0 0.25rem 1.5rem;
-  }
-  .top-card-row {
-    flex-direction: column;
-  }
-  .feature-header {
-    margin-top: 1rem;
-  }
-  .feature-cards {
-    width: 20.9375rem;
-  }
-}
 
 /*-----Tablet device-----*/
 @media (min-width: 576px) and (max-width: 992px) {
@@ -544,10 +533,190 @@ ul > a :hover {
   .top-card-row {
     flex-direction: column;
   }
-  .feature-header {
+  .feature-header,
+  .package-header {
     margin-top: 1rem;
   }
   .feature-cards {
-    width: 30.9375rem;
+    width: 20.9375rem;
+  }
+  .feature-cards > img {
+    width: 3rem;
+    height: 3rem;
+  }
+  .package-card-1,
+  .package-card-2 {
+    width: 36rem;
+    height: 29rem;
+    padding: 1rem;
+  }
+  .package-card-2 {
+    justify-content: start;
+  }
+  .card-box {
+    margin: 0 1rem 1rem;
+    width: 22rem;
+    height: 18.5625rem;
+    padding: 2rem;
+  }
+  .package-card-2 > .card-box {
+    margin: 0 1rem 1rem;
+    width: 25rem;
+    height: 18.5625rem;
+    padding: 1.5rem;
+  }
+  .package-info-container {
+    display: grid;
+    gap: 0.5rem;
+  }
+  .package-details > .primary-btn {
+    font-size: 1rem;
+    width: 8.125rem;
+    height: 2.5rem;
+    padding: 0.5625rem 1.25rem;
+  }
+  .package-card-container {
+    margin-bottom: 2rem;
+  }
+  
+}
+/*-----Mobile device-----*/
+@media (max-width: 576px) {
+  nav {
+    margin: 1.25rem;
+  }
+
+  .menu ul {
+    display: none;
+  }
+  .menu i {
+    display: block;
+    padding-top: 1rem;
+    width: 1.5rem;
+    height: 1.5rem;
+    cursor: pointer;
+  }
+  .logo-container {
+    gap: 0.5rem;
+  }
+  .banner {
+    margin: 1rem;
+  }
+  .banner-title {
+    padding: 2rem 4rem;
+    padding-bottom: 0.5rem;
+    font-size: 1.5rem;
+  }
+  .banner-subtitle {
+    padding: 0 1rem;
+  }
+  .trip-finder {
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 2rem auto;
+  }
+  .blogs {
+    text-align: left;
+    flex-direction: column;
+    margin: 3rem auto;
+  }
+  .blog-img img {
+    width: 98%;
+  }
+  .blog-container > .section-title {
+    text-align: left;
+    font-size: 1.25rem;
+  }
+  .section-details {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+  }
+  .section-title {
+    text-align: center;
+    font-size: 1.25rem;
+  }
+  .section-subtitle {
+    font-size: 1.25rem;
+  }
+  .first-row,
+  .second-row,
+  .third-row {
+    flex-direction: column;
+  }
+  .maldives,
+  .srilanka,
+  .bandarban,
+  .indonesia,
+  .bangladesh,
+  .north-america {
+    width: 100%;
+    max-width: 20.9375rem;
+    height: 11rem;
+  }
+  .kashmir {
+    display: none;
+  }
+  .kashmir-2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 20.9375rem;
+    height: 11rem;
+    border-radius: 1rem;
+    background: linear-gradient(
+        0deg,
+        rgba(19, 19, 24, 0.2) 0%,
+        rgba(19, 19, 24, 0.2) 100%
+      ),
+      url(../Images/kashmir-2.png) no-repeat;
+  }
+  .destination-section {
+    margin: 0 0.25rem 1.5rem;
+  }
+  .top-card-row {
+    flex-direction: column;
+  }
+  .feature-header,
+  .package-header {
+    margin-top: 1rem;
+  }
+  .feature-cards {
+    width: 20.9375rem;
+  }
+  .feature-cards > img {
+    width: 3rem;
+    height: 3rem;
+  }
+  .package-card-1,
+  .package-card-2 {
+    flex-direction: column;
+    width: 20.935rem;
+    height: 31.25rem;
+    padding: 1rem;
+  }
+  .package-card-2 {
+    justify-content: end;
+  }
+  .card-box,
+  .package-card-2 > .card-box {
+    margin: 0 1rem 1rem;
+    width: 17rem;
+    height: 18.5625rem;
+    padding: 1.5rem;
+  }
+  .package-info-container {
+    display: grid;
+    gap: 1.5rem;
+  }
+  .package-details > .primary-btn {
+    font-size: 1rem;
+    width: 8.125rem;
+    height: 2.5rem;
+    padding: 0.5625rem 1.25rem;
+  }
+  .package-card-container {
+    margin-bottom: 1rem;
   }
 }
